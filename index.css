@@ -88,11 +88,12 @@ footer {
 }
 .if{
   align-items: center;
-  max-width: 100%;
+  max-width: 25%;
   height: auto;
   margin-bottom: 20px;
   display: block;
   margin: 0 auto; 
+  filter: none;
 }
 
 nav ul li a {
@@ -139,4 +140,61 @@ ul li a {
 ul li a:hover {
   color: orange;
 }
+html {
+  font-family: sans-serif;
+}
 
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+}
+h1.titulo-pagina {
+  text-align: center;
+  
+    font-size: 80px; 
+    margin-bottom: 20px; 
+
+}
+h2.titulo-historia {
+  text-align: center;
+}
+.imagem {
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
