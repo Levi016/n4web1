@@ -1,77 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>urbanização brasileira </title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#urbanization">Urbanização</a></li>
-                <li><a href="#cities">Cidades</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Urbanização Brasileira</h1>
-            <p>aprenda sobre a historia e o impacto da urbanização no Brasil.</p>
-            <button>Saiba Mais</button>
-        </section>
-        <section id="about">
-            <h1>Sobre nos</h1>
-            <p>Eu, Levi Leite Costa e Pedro Lucas Evaristo somos alunos do 1A de inforamatica do ifce campos crato e esse e nosso site da n4 da materia de web1 feito para o nosso querido professor de geografia "potencia".</p>
-            <img class="if" src="data:image/png;base64,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" alt="About Us">
-        </section>
-        <section id="urbanization">
-            <h1>Urbanização no Brasil</h1>
-            <p>O Brasil tem experienciado uma rapida urbanização ao decorrer do ultimo seculo, como milhões de pessoas se mudando das areas rurais para as cidades grandes. Esta seção explora as causas, efeitos e desafios da urbanização no Brasil.</p>
-            <p>A urbanização no Brasil é um fenômeno complexo e multifacetado que se desenvolveu ao longo dos séculos, transformando significativamente a paisagem e a estrutura social do país. Desde o período colonial até os dias atuais, o processo de urbanização foi marcado por mudanças demográficas, econômicas, culturais e ambientais.
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>urbanização brasileira </title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#noticias" onclick="showContent('noticias')">O que é Urbanização?</a>
+                          </li>
+                        <li>
+                            <a href="#historia" onclick="showContent('historia')">Historia</a>
+                          </li>
+                        <li>
+                            <a href="#projetos" onclick="showContent('programas')">Impactos Da Urbanização</a>
+                          </li>
+                    
+                          <li>
+                            <a href="#contato" onclick="showContent('contato')">Principais Cidades</a>
+                          </li>
+                          <li>
+                            <a href="#programas" onclick="showContent('projetos')">Sobre Nos</a>
+                          </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="historia" class="content">
+                    <img src="POA-aérea-DanielHunter-WRIBrasil.jpg" alt="">
+                    
+                        <h1 class="titulo-pagina">Urbanização no Brasil</h1>
+                    <p>01/12/23    por: Pedro Lucas e Levi Leite</p>
+                        
+                    <section>
+                        <h2 class="titulo-historia">A história da urbanização brasileira</h2>
+                        <p>
+                            A urbanização brasileira é um fenômeno complexo e multifacetado que se desenvolveu ao longo dos séculos, transformando significativamente a paisagem e a estrutura social do país. Desde o período colonial até os dias atuais, o processo de urbanização foi marcado por mudanças demográficas, econômicas, culturais e ambientais
+                          Há diversos fatores que contribuíram para essa urbanização, como o crescimento econômico, a industrialização e a migração do campo para a cidade.
+                        <p>
+                      
+                        <p>
+                            Durante o período colonial, as cidades surgiram como centros administrativos e comerciais ligados à exploração do pau-brasil, cana-de-açúcar e mineração. As principais cidades eram centros urbanos costeiros, como Salvador, que desempenhavam um papel fundamental na conexão com as rotas comerciais europeias. O formato urbano nesse período era influenciado pelos padrões urbanísticos portugueses da época.
+                        </p>
+                      
+                        <p>
+                            A chegada da Família Real Portuguesa ao Brasil em 1808, fugindo das invasões napoleônicas, teve um impacto significativo na urbanização. A abertura dos portos brasileiros para o comércio internacional impulsionou o crescimento urbano, especialmente no Rio de Janeiro, que se tornou a capital do Império Português.
+                        <p>
+                        
+                        <p>
+                            O século XIX testemunhou a consolidação de cidades importantes e o surgimento de novas, impulsionadas pelo ciclo do café. São Paulo, por exemplo, experimentou um crescimento expressivo devido à expansão da cultura do café no interior do estado. A construção de ferrovias e a modernização de infraestruturas urbanas também foram características desse período.
+                        <p>
+                        
+                        <p>
+                            A segunda metade do século XX foi marcada pela industrialização e migração massiva do campo para a cidade. Esse êxodo rural resultou na expansão desordenada e rápida das áreas urbanas, levando à formação de grandes metrópoles, como São Paulo e Rio de Janeiro. A urbanização acelerada trouxe consigo desafios como a falta de infraestrutura, moradia precária, desigualdade social e poluição.
+                        <p>
+                      
+                        <p>
+                            Ao longo dos anos, o Brasil implementou diversas políticas urbanas para enfrentar esses desafios, incluindo programas habitacionais, investimentos em transporte público e saneamento básico. No entanto, a complexidade dos problemas urbanos persiste, demandando soluções integradas.
 
-              A história da urbanização brasileira está intimamente ligada aos ciclos econômicos. Durante o período colonial, as cidades surgiram como centros administrativos e comerciais ligados à exploração do pau-brasil, cana-de-açúcar e mineração. Com o passar do tempo, a chegada da Família Real Portuguesa ao Brasil, em 1808, impulsionou a modernização das cidades, com a abertura dos portos, a criação de instituições culturais e o desenvolvimento de infraestrutura urbana.
-              
-              No entanto, foi a partir da segunda metade do século XX que o processo de urbanização se intensificou consideravelmente, impulsionado pela industrialização e migração do campo para as cidades. Esse êxodo rural resultou na expansão desordenada e rápida das áreas urbanas, levando à formação de grandes metrópoles e à concentração de problemas como a falta de infraestrutura, moradia precária, desigualdade social, poluição e congestionamentos.
-              
-              As políticas de urbanização implementadas ao longo dos anos buscaram lidar com esses desafios, promovendo a criação de programas habitacionais, investimentos em transporte público, saneamento básico e políticas de desenvolvimento urbano. No entanto, a complexidade e a magnitude dos problemas urbanos no Brasil ainda demandam soluções integradas e de longo prazo.
-              
-              Atualmente, o país enfrenta o desafio de conciliar o crescimento urbano com a preservação ambiental, a promoção de espaços públicos de qualidade, a redução das desigualdades e o acesso universal a serviços básicos. A busca por cidades mais sustentáveis, inclusivas e resilientes tem sido um objetivo central nas discussões e iniciativas de planejamento urbano em diversas regiões do Brasil.
-              
-              A urbanização no Brasil reflete não apenas o crescimento das cidades, mas também as transformações sociais, econômicas e culturais pelas quais o país passou ao longo de sua história. O desafio reside em encontrar um equilíbrio entre o desenvolvimento urbano e a qualidade de vida, promovendo cidades mais humanas, justas e adaptadas aos desafios do século XXI.</p>
-            <img src="https://www.wribrasil.org.br/sites/default/files/styles/1440x550/public/2022-07/POA-a%C3%A9rea-DanielHunter-WRIBrasil.jpg?h=90d811a5&itok=OQ0whhcQ" alt="Urbanization in Brazil">
-        </section>
-        <section id="cities">
-            <h1>Principais Cidades Brasileiras</h1>
-            <ul>
-                <li><a href="#">São Paulo</a></li>
-                <li><a href="#">Rio de Janeiro</a></li>
-                <li><a href="#">Salvador</a></li>
-                <li><a href="#">Curitiba</a></li>
-            </ul>
-        </section>
-        <section id="cities-info">
-          <h1>Cidades Brasileiras</h1>
-          <p>O Brasil abriga uma variedade de cidades fascinantes, cada uma com sua própria história, cultura e beleza única. Abaixo estão algumas das cidades mais importantes e emblemáticas do país:</p>
-          <ul>
-              <li><strong>São Paulo:</strong> Conhecida como o centro financeiro e cultural do Brasil, São Paulo é a maior cidade do país, oferecendo uma mistura de arte, gastronomia e diversidade.</li>
-              <li><strong>Rio de Janeiro:</strong> Famosa por suas praias icônicas, incluindo Copacabana e Ipanema, o Rio de Janeiro também abriga o Cristo Redentor e uma rica cena cultural.</li>
-              <li><strong>Salvador:</strong> Com forte influência africana, Salvador é famosa pelo seu carnaval, música e arquitetura histórica, incluindo o Pelourinho, um Patrimônio Mundial da UNESCO.</li>
-              <li><strong>Curitiba:</strong> Reconhecida por seu planejamento urbano inovador, parques amplos e qualidade de vida, Curitiba é uma cidade verde e sustentável no sul do Brasil.</li>
-          </ul>
-          <p>Essas cidades representam uma pequena amostra da diversidade e riqueza cultural que as cidades brasileiras têm a oferecer.</p>
-      </section>
-      
-      
-    </main>
-  </div>
-    <footer>
-        <p>&copy; 2023 Urbanização Brasileira</p>
-    </footer>
-    <script src="index.js"></script>
-</body>
+Atualmente, o país enfrenta o desafio de conciliar o crescimento urbano com a preservação ambiental, promoção de espaços públicos de qualidade, redução das desigualdades e acesso universal a serviços básicos. A busca por cidades mais sustentáveis, inclusivas e resilientes tem sido um objetivo central nas discussões e iniciativas de planejamento urbano.
+
+Em resumo, a história da urbanização brasileira reflete não apenas o crescimento das cidades, mas também as transformações sociais, econômicas e culturais pelas quais o país passou ao longo de sua história. O desafio atual reside em encontrar um equilíbrio entre o desenvolvimento urbano e a qualidade de vida, promovendo cidades mais humanas, justas e adaptadas aos desafios do século XXI.
+                        <p>
+                <p> a historia da urbanização brasileira pode ser dividida em partes, como mostraremos a seguir:</p>
+                <h2>Periodo Colonial:</h2>
+                <p>Surgimento das primeiras cidades ligadas à exploração do pau-brasil, cana-de-açúcar e mineração.
+                    Centros urbanos costeiros como Salvador e influência dos padrões urbanísticos portugueses.</p>
+                <h2>Chegada da Família Real Portuguesa (1808):</h2>
+                <p>Abertura dos portos brasileiros para o comércio internacional, impulsionando o crescimento urbano, especialmente no Rio de Janeiro.</p>
+                <h2>Século XIX (1800 - 1900):</h2>
+                <p>Consolidação de cidades importantes e surgimento de novas, impulsionadas pelo ciclo do café.
+                    Crescimento expressivo de cidades como São Paulo devido à expansão da cultura do café e desenvolvimento de infraestruturas.</p>
+                <h2>Segunda metade do século XX (1900 - 2000):</h2>
+                <p>Industrialização e migração maciça do campo para a cidade, resultando na rápida expansão e urbanização desordenada.
+                    Formação de grandes metrópoles como São Paulo e Rio de Janeiro, acompanhadas por desafios como falta de infraestrutura e desigualdade social.</p>
+                <h2>Atualidade (Século XXI em diante):</h2>
+                <p>Implementação de políticas urbanas para lidar com os desafios, incluindo programas habitacionais, investimentos em transporte público e saneamento básico.
+                    Busca por cidades mais sustentáveis, inclusivas e resilientes, enfatizando a preservação ambiental, redução das desigualdades e acesso universal a serviços básicos.</p>
+
+                    <p>Essa divisão em partes ajuda a compreender a evolução da urbanização brasileira ao longo do tempo, destacando os principais eventos, mudanças econômicas e sociais que moldaram as cidades no país.
+
+
+
+
+
+                    </p>
+                </section>
+                <img class="imagem" src="https://www.wribrasil.org.br/sites/default/files/styles/1440x550/public/2022-07/SP-Paulista-MarianaGail-WRIBrasil.jpg?h=67b34156&itok=v3jAAQ-2" alt="">
+                </section>
+                <section>
+                
+                </section>
+                <section>
+                    <section id="programas" class="content">
+                        <h1>Sobre Nos</h1>
+                      
+                        <button id="saibaMaisBtn">Saiba Mais</button>
+                        <div id="infoAdicional" style="display: none;">
+                            <p>Eu, Levi Leite Costa e Pedro Lucas Evaristo Somos alunos do IFCE Campus Crato, e esse é o nosso trabalho da n4 da materia de desenvolvimento web, feito para nosso querido professor de geografia Joao Cesar, ou como gostamos de chama-lo, "potência".</p>
+                            <img class="if" src="data:image/png;base64,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" alt="IFCE Campus Crato">
+                        </div>
+                    </section>
+                    
+                <section id="projetos" class="content">
+                    <h1>Impactos da Urbnanização no Brasil</h1>
+                    <p>
+                        A urbanização no Brasil teve efeitos profundos e multifacetados em diferentes aspectos da sociedade, da economia e do meio ambiente. Esses impactos são diversos e podem ser vistos de várias maneiras:</p>
+                        <h2>Mudança Social e Demográfica:</h2>
+                        <p>A urbanização levou a uma mudança significativa na demografia do país. Grandes contingentes populacionais migraram do campo para as cidades, buscando oportunidades econômicas. Isso resultou em um aumento na densidade populacional nas áreas urbanas, criando desafios como o surgimento de comunidades marginais e a sobrecarga dos serviços públicos.</p>
+                        <h2>Desenvolvimento Econômico:</h2>
+                        <p>As cidades se tornaram centros econômicos vitais, impulsionando o crescimento industrial e comercial. A concentração de indústrias e empresas nas áreas urbanas gerou empregos e oportunidades, mas também intensificou problemas como a poluição e a desigualdade econômica.</p>
+                        <h2>Infraestrutura e Qualidade de Vida:</h2>
+                        <p>A rápida urbanização muitas vezes superou a capacidade de desenvolvimento de infraestrutura adequada. Isso resultou em problemas como deficiências no sistema de transporte, falta de moradia adequada, acesso limitado a serviços básicos (como saúde e educação) e problemas de saneamento, afetando diretamente a qualidade de vida de muitos habitantes urbanos.</p>
+                        <h2>Impacto Ambiental:</h2>
+                        <p>O crescimento urbano desordenado contribuiu para a degradação ambiental. O desmatamento para a expansão urbana, a poluição do ar e da água, juntamente com a falta de áreas verdes, afetaram negativamente o meio ambiente, aumentando os desafios relacionados à sustentabilidade e à saúde pública.</p>
+                        <h2>Cultural e Social:</h2>
+                        <p>As cidades se tornaram centros de diversidade cultural e intercâmbio, criando uma mistura de tradições e identidades. No entanto, a urbanização também deu origem a desafios sociais, como segregação socioeconômica, criminalidade urbana e a perda de laços comunitários presentes em áreas mais rurais.</p>
+                        <p>Os impactos da urbanização no Brasil refletem um processo dinâmico de mudanças profundas na estrutura social, econômica e ambiental do país. Lidar com esses impactos exige políticas públicas eficazes, planejamento urbano sustentável e investimentos contínuos em infraestrutura e serviços para garantir um crescimento urbano mais equitativo e sustentável.</p>
+                    <img class="imagem" src="https://images.ecycle.com.br/wp-content/uploads/2023/01/20204512/matteo-catanese-PI8Hk-3ZcCU-unsplash-scaled.jpg.webp" alt="About Us">
+                </section>
+                <section id="noticias" class="content">
+                    <h1>O que é Urbanização?</h1>
+                    <p>Resumidamente a Urbanização é o processo de crescimento e desenvolvimento das áreas urbanas, onde as populações se concentram cada vez mais em cidades e centros urbanos em vez de viverem em áreas rurais. Isso geralmente envolve a expansão de infraestrutura, o aumento da densidade populacional e o surgimento de atividades econômicas, sociais e culturais associadas às cidades. A urbanização está intimamente ligada ao crescimento urbano e traz consigo desafios e impactos significativos, como a demanda por serviços, a pressão sobre recursos naturais e questões relacionadas à qualidade de vida e ao meio ambiente.
+
+             </p>
+                    <img src="https://www.wribrasil.org.br/sites/default/files/styles/1440x550/public/2022-07/POA-a%C3%A9rea-DanielHunter-WRIBrasil.jpg?h=90d811a5&itok=OQ0whhcQ" alt="Urbanization in Brazil">
+                </section>
+                <section id="contato" class="content">
+                    <h1>Principais Cidades Brasileiras</h1>
+                    <ul>
+                        <li>
+                            <a href="#">São Paulo</a>
+                        </li>
+                        <li>
+                            <a href="#">Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a href="#">Salvador</a>
+                        </li>
+                        <li>
+                            <a href="#">Curitiba</a>
+                        </li>
+                    </ul>
+                </section>
+                <section id="home" class="content">
+                    <h1>Cidades Brasileiras</h1>
+                    <p>O Brasil abriga uma variedade de cidades fascinantes, cada uma com sua própria história, cultura e beleza única. Abaixo estão algumas das cidades mais importantes e emblemáticas do país:</p>
+                    <ul>
+                        <li>
+                            <strong>São Paulo:</strong>
+                            Conhecida como o centro financeiro e cultural do Brasil, São Paulo é a maior cidade do país, oferecendo uma mistura de arte, gastronomia e diversidade.
+                        </li>
+                        <li>
+                            <strong>Rio de Janeiro:</strong>
+                            Famosa por suas praias icônicas, incluindo Copacabana e Ipanema, o Rio de Janeiro também abriga o Cristo Redentor e uma rica cena cultural.
+                        </li>
+                        <li>
+                            <strong>Salvador:</strong>
+                            Com forte influência africana, Salvador é famosa pelo seu carnaval, música e arquitetura histórica, incluindo o Pelourinho, um Patrimônio Mundial da UNESCO.
+                        </li>
+                        <li>
+                            <strong>Curitiba:</strong>
+                            Reconhecida por seu planejamento urbano inovador, parques amplos e qualidade de vida, Curitiba é uma cidade verde e sustentável no sul do Brasil.
+                        </li>
+                    </ul>
+                    <p>Essas cidades representam uma pequena amostra da diversidade e riqueza cultural que as cidades brasileiras têm a oferecer.</p>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <p>&copy;2023 Urbanização Brasileira</p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
 </html>
